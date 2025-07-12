@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegancia Pura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Background Image with Strong Fade -->
+        <div class="header-bg"></div>
+        
+        <!-- Header Content -->
+        <div class="header-content">
+            <!-- Back Button -->
+            <div class="back-button-container">
+                <button class="back-button">
+                    <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m12 19-7-7 7-7"/>
+                        <path d="m19 12H5"/>
+                    </svg>
+                    <span>Volver</span>
+                </button>
+            </div>
+
+            <!-- Title -->
+            <div class="title-container">
+                <h1 class="main-title">Elegancia Pura</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Main Text -->
+            <div class="main-text-section">
+                <p class="main-text">
+                    Descubre una experiencia única donde la sofisticación se encuentra con la funcionalidad. 
+                    Nuestro enfoque meticuloso en cada detalle garantiza que cada elemento no solo sea 
+                    visualmente impactante, sino también profundamente significativo. La excelencia no es 
+                    solo nuestro objetivo, es nuestra promesa.
+                </p>
+            </div>
+
+            <!-- Images Section -->
+            <div class="images-section">
+                <!-- Main Image -->
+                <div class="main-image-container">
+                    <img src="https://images.pexels.com/photos/1648377/pexels-photo-1648377.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop"
+                         alt="Elegant design showcase"
+                         class="main-image clickable-image"
+                         data-caption="Diseño elegante y sofisticado">
+                </div>
+                
+                <!-- Three Images Row - Separated -->
+                <div class="three-images-container">
+                    <div class="three-images-grid">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                             alt="Detail 1"
+                             class="grid-image clickable-image"
+                             data-caption="Detalle arquitectónico refinado">
+                        <img src="https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                             alt="Detail 2"
+                             class="grid-image clickable-image"
+                             data-caption="Elementos de diseño premium">
+                        <img src="https://images.pexels.com/photos/1667088/pexels-photo-1667088.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+                             alt="Detail 3"
+                             class="grid-image clickable-image"
+                             data-caption="Acabados de lujo y calidad">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Section - Well Separated -->
+        <section class="cards-section">
+            <div class="container">
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="card" data-delay="0">
+                        <div class="card-icon card-icon-1">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Excelencia</h3>
+                        <p class="card-text">
+                            Cada proyecto es una obra maestra cuidadosamente elaborada con atención meticulosa 
+                            a cada detalle, garantizando resultados que superan las expectativas más altas.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card" data-delay="200">
+                        <div class="card-icon card-icon-2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="6"/>
+                                <path d="m9 12 2 2 4-4"/>
+                                <path d="m21 21-3-3m0 0-3-3m3 3 3-3m-3 3-3 3"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Innovación</h3>
+                        <p class="card-text">
+                            Pioneros en soluciones creativas que combinan tecnología de vanguardia con 
+                            diseño intuitivo, creando experiencias que marcan la diferencia.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card" data-delay="400">
+                        <div class="card-icon card-icon-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                <path d="M14 9h1.5a2.5 2.5 0 0 0 0-5H14"/>
+                                <path d="M6 9v6"/>
+                                <path d="M14 9v6"/>
+                                <path d="m6 15 7-6"/>
+                                <path d="m13 20 6-6"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Distinción</h3>
+                        <p class="card-text">
+                            Reconocidos por nuestra capacidad de transformar ideas en realidades tangibles 
+                            que no solo funcionan perfectamente, sino que inspiran y cautivan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Section -->
+        <section class="info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-text">
+                        <h2 class="info-title">Creando el Futuro</h2>
+                        <p class="info-paragraph">
+                            En un mundo donde la mediocridad es común, nosotros elegimos la excelencia. 
+                            Cada línea de código, cada elemento visual, cada interacción está pensada 
+                            para crear experiencias memorables que trascienden lo ordinario.
+                        </p>
+                        <p class="info-paragraph">
+                            Nuestro compromiso va más allá de la simple funcionalidad. Creamos 
+                            ecosistemas digitales que evolucionan con las necesidades de nuestros 
+                            clientes, anticipando tendencias y estableciendo nuevos estándares 
+                            en la industria.
+                        </p>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-dot feature-dot-1"></div>
+                                <span>Diseño centrado en el usuario</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-dot feature-dot-2"></div>
+                                <span>Tecnología de vanguardia</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-dot feature-dot-3"></div>
+                                <span>Resultados medibles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-image-container">
+                        <div class="info-image-bg"></div>
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                             alt="Future vision"
+                             class="info-image clickable-image"
+                             data-caption="Visión del futuro digital">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Viewer Modal (Instagram-style) -->
+    <div class="image-viewer-overlay" id="imageViewer">
+        <div class="image-viewer-container">
+            <!-- Close Button -->
+            <button class="image-viewer-close" id="closeViewer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <!-- Image Container -->
+            <div class="image-viewer-content">
+                <img id="viewerImage" src="" alt="">
+                <div class="image-viewer-caption" id="viewerCaption"></div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="image-viewer-nav image-viewer-prev" id="prevImage">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+            </button>
+            <button class="image-viewer-nav image-viewer-next" id="nextImage">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
