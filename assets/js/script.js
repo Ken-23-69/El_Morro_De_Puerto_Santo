@@ -21,7 +21,7 @@ const institutions = [
   },
   {
     name: "Insopesca",
-    image: "assets/img/work/Insopesca2.jpg",
+    image: "assets/img/work/Insopesca.jpg",
     description: "Stanford es una universidad privada de investigación ubicada en California. Es reconocida por su proximidad a Silicon Valley y su fuerte enfoque en la innovación y el emprendimiento. Ha sido cuna de muchas empresas tecnológicas importantes y cuenta con uno de los fondos de dotación más grandes del mundo.",
     founded: "1885",
     students: "17,249",
