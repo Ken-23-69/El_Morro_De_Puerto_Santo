@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festividades de El Morro de Puerto Santo - Sucre, Venezuela</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="/index.html#festividades" class="home-btn" onclick="showSection('inicio')"> Inicio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#carnavales" class="nav-link" onclick="showSection('carnavales')">Carnavales</a></li>
+                <li class="nav-item"><a href="#semana-santa" class="nav-link" onclick="showSection('semana-santa')">Semana Santa</a></li>
+                <li class="nav-item"><a href="#san-ramon" class="nav-link" onclick="showSection('san-ramon')">San Ramón</a></li>
+                <li class="nav-item"><a href="#virgen-valle" class="nav-link" onclick="showSection('virgen-valle')">Virgen del Valle</a></li>
+                <li class="nav-item"><a href="#dia-muertos" class="nav-link" onclick="showSection('dia-muertos')">Día de Muertos</a></li>
+                <li class="nav-item"><a href="#navidad" class="nav-link" onclick="showSection('navidad')">Navidad</a></li>
+                <li class="nav-item"><a href="#fin-ano" class="nav-link" onclick="showSection('fin-ano')">Fin de Año</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Welcome Section -->
+        <section id="inicio" class="section active">
+            <div class="welcome">
+                <h1>Festividades de El Morro de Puerto Santo</h1>
+                <p>Descubre la rica tradición cultural y las celebraciones más emblemáticas de nuestro hermoso pueblo costero en el estado Sucre, Venezuela. Cada festividad representa la esencia de nuestra comunidad, llena de tradiciones, fe, alegría y el espíritu caribeño que nos caracteriza.</p>
+                <p class="cta-text">Explora nuestras festividades tradicionales haciendo clic en el menú de navegación.</p>
+            </div>
+        </section>
+
+        <!-- Carnavales -->
+        <section id="carnavales" class="section">
+            <div class="festival-header">
+                <h1>Carnavales de El Morro</h1>
+                <p>La explosión de color, música y alegría que marca el inicio del año festivo</p>
+            </div>
+            <div class="festival-content">
+                <div class="festival-info">
+                    <p>Los Carnavales de El Morro de Puerto Santo representan una de las celebraciones más vibrantes y esperadas del año. Durante estos días, las calles se llenan de música, comparsas coloridas y el espíritu festivo que caracteriza al Caribe venezolano.</p>
+                    <p>Las tradiciones carnavalescas incluyen desfiles de carrozas adornadas con motivos marinos, comparsas que danzan al ritmo de calipso y tambores, y la participación activa de toda la comunidad. Los disfraces reflejan tanto tradiciones ancestrales como elementos contemporáneos, creando un espectáculo único.</p>
+                    <p>Durante cuatro días, El Morro se transforma en un escenario de celebración donde habitantes y visitantes disfrutan de actividades culturales, concursos de disfraces, presentaciones musicales y la tradicional quema del mal humor, simbolizando el renacimiento y la renovación de energías.</p>
+                    <p>Los carnavales también incluyen actividades gastronómicas donde se pueden degustar platos típicos como el pescado frito, empanadas de cazón y dulces tradicionales, acompañados de refrescantes bebidas tropicales que complementan la experiencia festiva.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Semana Santa -->
+        <section id="semana-santa" class="section">
+            <div class="festival-header">
+                <h1>Semana Santa</h1>
+                <p>Tradición, fe y recogimiento en la comunidad de El Morro</p>
+            </div>
+            <div class="festival-content">
+                <div class="festival-info">
+                    <p>La Semana Santa en El Morro de Puerto Santo es una época de profunda reflexión espiritual y tradición religiosa. Durante estos días sagrados, la comunidad se une en oración, procesiones solemnes y actividades que reflejan la fe católica profundamente arraigada en el pueblo.</p>
+                    <p>Las celebraciones inician el Domingo de Ramos con la bendición de palmas y ramas de olivo, continuando con el Miércoles de Ceniza y los actos litúrgicos que preparan a la feligresía para la conmemoración de la Pasión, Muerte y Resurrección de Cristo.</p>
+                    <p>El Jueves Santo se caracteriza por la ceremonia del lavatorio de pies y la Adoración al Santísimo Sacramento. El Viernes Santo, la comunidad participa en el Via Crucis por las principales calles del pueblo, culminando en la iglesia principal con la adoración de la Cruz.</p>
+                    <p>La Vigilia Pascual del Sábado Santo y la celebración de la Resurrección el Domingo de Pascua marcan el punto culminante de estas celebraciones, llenando de alegría y esperanza a todos los participantes. Durante estos días, se mantienen tradiciones culinarias especiales como la preparación de platos sin carne y dulces típicos de la época.</p>
+                </div>
+                <div class="gallery">
+                    <h2>Galería de Semana Santa</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-semana-santa">
+                            <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel('semana-santa', -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('semana-santa', 1)">›</button>
+                        <div class="carousel-indicators" id="indicators-semana-santa"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fiestas de San Ramón -->
+        <section id="san-ramon" class="section">
+            <div class="festival-header">
+                <h1>Fiestas de San Ramón</h1>
+                <p>Veneración al santo patrono de las mujeres embarazadas y parturientas</p>
+            </div>
+            <div class="festival-content">
+                <div class="festival-info">
+                    <p>Las Fiestas de San Ramón Nonato, celebradas el 31 de agosto, constituyen una de las tradiciones religiosas más importantes de El Morro de Puerto Santo. San Ramón es especialmente venerado por las mujeres embarazadas y aquellas que desean concebir, siendo considerado el protector de los partos difíciles.</p>
+                    <p>Durante esta festividad, la comunidad organiza novenas previas, misas especiales y procesiones donde los fieles llevan ofrendas florales y velas encendidas. Las embarazadas del pueblo participan activamente en las ceremonias, pidiendo la protección del santo para un parto seguro y saludable.</p>
+                    <p>La tradición incluye la elaboración de altares caseros decorados con flores blancas y amarillas, velas y estampas del santo. Las familias preparan comidas especiales que luego comparten con la comunidad, fortaleciendo los lazos de hermandad y solidaridad.</p>
+                    <p>Además de las actividades religiosas, se realizan actividades culturales como presentaciones musicales, danzas folklóricas y la tradicional feria gastronómica donde se pueden degustar dulces típicos, especialmente aquellos preparados con coco y papelón, ingredientes abundantes en la región costera.</p>
+                </div>
+                <div class="gallery">
+                    <h2>Galería de San Ramón</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-san-ramon">
+                            <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel('san-ramon', -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('san-ramon', 1)">›</button>
+                        <div class="carousel-indicators" id="indicators-san-ramon"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paseo de la Virgen del Valle -->
+        <section id="virgen-valle" class="section">
+            <div class="festival-header">
+                <h1>Paseo de la Virgen del Valle</h1>
+                <p>Homenaje a la patrona del oriente venezolano y protectora de los navegantes</p>
+            </div>
+            <div class="festival-content">
+                <div class="festival-info">
+                    <p>El Paseo de la Virgen del Valle, celebrado el 8 de septiembre, es una de las festividades más emotivas y significativas para los habitantes de El Morro de Puerto Santo. La Virgen del Valle, patrona del oriente venezolano, es especialmente venerada por los pescadores y navegantes de la región.</p>
+                    <p>La celebración incluye una solemne procesión marítima donde decenas de embarcaciones, adornadas con banderas, flores y luces, acompañan la imagen de la Virgen a lo largo de la costa. Los pescadores y marineros participan activamente, agradeciendo por la protección recibida durante sus faenas en el mar.</p>
+                    <p>Durante el recorrido, se realizan paradas en puntos específicos del litoral para ofrecer plegarias y bendiciones especiales. La comunidad se congrega en las playas para acompañar la procesión desde tierra, creando un ambiente de profunda devoción y fe.</p>
+                    <p>La festividad concluye con una misa solemne en la iglesia principal, seguida de actividades culturales que incluyen presentaciones de música folklórica, especialmente polos y galerones que narran las hazañas marineras y la devoción a la Virgen. Se preparan platos típicos a base de pescado fresco y mariscos, celebrando los frutos del mar que la Virgen protege.</p>
+                </div>
+                <div class="gallery">
+                    <h2>Galería Virgen del Valle</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-virgen-valle">
+                            <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel('virgen-valle', -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('virgen-valle', 1)">›</button>
+                        <div class="carousel-indicators" id="indicators-virgen-valle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Día de los Muertos -->
+        <section id="dia-muertos" class="section">
+            <div class="festival-header">
+                <h1>Día de los Muertos</h1>
+                <p>Recordatorio y homenaje a nuestros seres queridos que partieron</p>
+            </div>
+            <div class="festival-content">
+                <div class="festival-info">
+                    <p>El Día de los Muertos, celebrado el 1 y 2 de noviembre, es una fecha de especial significado en El Morro de Puerto Santo. Durante estos días, la comunidad honra y recuerda a sus seres queridos fallecidos con tradiciones que mezclan la solemnidad religiosa con el cariño familiar.</p>
+                    <p>Las familias visitan el cementerio local llevando flores frescas, especialmente claveles y crisantemos, velas encendidas y ofrendas alimenticias que eran del agrado del difunto. Se realiza una limpieza y decoración especial de las tumbas, convirtiendo el camposanto en un lugar de encuentro familiar y comunitario.</p>
+                    <p>Una tradición particular del pueblo es la preparación de "dulce de leche" y "majarete" que se comparten entre las familias en el cementerio, creando un ambiente de hermandad en el recuerdo. Los niños participan aprendiendo sobre sus antepasados y la importancia de mantener viva la memoria familiar.</p>
+                    <p>Durante la noche del 1 de noviembre, se realiza una vigilia especial en la iglesia con misas por el eterno descanso de las almas, acompañadas de cantos gregorianos y oraciones comunitarias. Esta celebración refuerza los lazos familiares y la continuidad de las tradiciones ancestrales del pueblo.</p>
+                </div>
+                <div class="gallery">
+                    <h2>Galería Día de los Muertos</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-dia-muertos">
+                            <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel('dia-muertos', -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('dia-muertos', 1)">›</button>
+                        <div class="carousel-indicators" id="indicators-dia-muertos"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navidad -->
+        <section id="navidad" class="section">
+            <div class="festival-header">
+                <h1>Navidad</h1>
+                <p>La época más mágica del año en nuestro pueblo costero</p>
+            </div>
+            <div class="festival-content">
+                <div class="festival-info">
+                    <p>La Navidad en El Morro de Puerto Santo es una celebración que combina la tradición católica con las costumbres locales, creando una atmósfera única de alegría, paz y unión familiar. Desde diciembre, el pueblo se transforma con decoraciones que aprovechan elementos naturales de la costa.</p>
+                    <p>Las festividades navideñas incluyen la tradicional "Parranda de Aguinaldos" donde grupos de músicos recorren las casas cantando villancicos venezolanos acompañados de cuatro, maracas y tambores. Los habitantes reciben a los parranderos con bebidas calientes y dulces típicos, manteniendo viva esta hermosa tradición.</p>
+                    <p>La Nochebuena se celebra con la "Misa del Gallo" a medianoche, precedida por una procesión con la imagen del Niño Jesús. Las familias se reúnen para compartir la cena navideña que incluye pescado fresco, hallacas, pan de jamón y dulces como el quesillo y las conservas de coco.</p>
+                    <p>Durante la época navideña, se organizan actividades especiales para los niños como obras teatrales del nacimiento, concursos de pesebres y la visita de los Reyes Magos el 6 de enero. Las casas se adornan con luces que reflejan en las aguas del mar, creando un espectáculo visual único que caracteriza la Navidad en este hermoso pueblo costero.</p>
+                </div>
+                <div class="gallery">
+                    <h2>Galería de Navidad</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-navidad">
+                            <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel('navidad', -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('navidad', 1)">›</button>
+                        <div class="carousel-indicators" id="indicators-navidad"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fin de Año -->
+        <section id="fin-ano" class="section">
+            <div class="festival-header">
+                <h1>Fin de Año</h1>
+                <p>Despedida del año con esperanza y buenos deseos para el futuro</p>
+            </div>
+            <div class="festival-content">
+                <div class="festival-info">
+                    <p>La celebración de Fin de Año en El Morro de Puerto Santo es una fiesta comunitaria que combina tradiciones familiares con rituales populares para atraer la buena fortuna en el año que comienza. La ubicación costera del pueblo añade elementos únicos a esta celebración universal.</p>
+                    <p>Las familias se reúnen para compartir la cena de Nochevieja, que tradicionalmente incluye lentejas para la prosperidad, uvas para la abundancia y pescado fresco que representa los dones del mar. Durante la cena se comparten anécdotas del año que termina y se expresan los deseos para el año nuevo.</p>
+                    <p>Una tradición especial del pueblo es el "Baño de Medianoche" donde muchos habitantes se dirigen a la playa para recibir el año nuevo con los pies en el mar, simbolizando la renovación y la purificación. Las aguas del Caribe reciben a los celebrantes con sus cálidas temperaturas típicas de la región.</p>
+                    <p>Los fuegos artificiales se lanzan desde la costa, creando reflejos espectaculares en el agua marina. La música en vivo ameniza la celebración con géneros típicos venezolanos como salsa, merengue y gaitas zulianas. La fiesta se extiende hasta altas horas de la madrugada, con bailes populares y la tradicional quema del "Año Viejo", un muñeco que representa lo negativo que se deja atrás.</p>
+                </div>
+                <div class="gallery">
+                    <h2>Galería de Fin de Año</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carousel-fin-ano">
+                            <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+                        </div>
+                        <button class="carousel-btn prev" onclick="moveCarousel('fin-ano', -1)">‹</button>
+                        <button class="carousel-btn next" onclick="moveCarousel('fin-ano', 1)">›</button>
+                        <div class="carousel-indicators" id="indicators-fin-ano"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="Imagen ampliada">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 El Morro de Puerto Santo - Sucre, Venezuela</p>
+        <p>Preservando nuestras tradiciones para las futuras generaciones</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
