@@ -27,7 +27,7 @@ header{
 }
 
 header nav a{
-    color: #eee;
+    color: #000;
     margin-right: 5px;
     padding: 15px 20px;
     font-family: "Poppins", sans-serif;
@@ -352,4 +352,5 @@ button:hover{
 
 
       
+
 
