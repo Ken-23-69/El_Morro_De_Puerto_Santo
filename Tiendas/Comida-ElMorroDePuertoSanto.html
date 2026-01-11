@@ -76,7 +76,7 @@
             margin: 0 auto;
         }
 
-     /* Botón de página principal */
+    /* Botón de página principal */
 .home-button {
     position: fixed;
     bottom: 30px;
@@ -519,7 +519,8 @@
             <p class="subtitle">Descubre los mejores restaurantes de la ciudad con una amplia variedad de platillos y experiencias culinarias únicas</p>
         </div>
 
-        <button id="homeButton" class="home-button">
+      <!-- Botón de regreso a página principal - Agregar justo antes del </body> -->
+<button id="homeButton" class="home-button">
     <i class="fas fa-home"></i>
     <span>Página Principal</span>
 </button>
@@ -939,7 +940,9 @@
         // Inicializar la aplicación cuando el DOM esté cargado
         document.addEventListener('DOMContentLoaded', init);
 
-  // Crear y agregar el botón de página principal
+// Agregar esta función al final de tu script existente
+
+// Crear y agregar el botón de página principal
 function addHomeButton() {
     // Verificar si el botón ya existe
     if (document.getElementById('homeButton')) return;
@@ -967,12 +970,7 @@ document.addEventListener('DOMContentLoaded', function() {
     addHomeButton();
 });
     
-    // También puedes agregar esta línea al final de tu función init() existente
-    // init() {
-    //   // tu código existente...
-    //   addHomeButton(); // <-- Agregar esta línea
-    // }
-});
+  
     </script>
 </body>
 </html>
