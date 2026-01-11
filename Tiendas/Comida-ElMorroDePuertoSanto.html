@@ -960,10 +960,10 @@ function addHomeButton() {
     homeButton.addEventListener('click', goToHomePage);
 }
 
-// Función para redirigir a la página principal
-function goToHomePage() {
-    // Cambia esta URL por la dirección de tu página principal
-    window.location.href = '../index.html#comidas'; // o la URL que necesites
+    // Agregar funcionalidad al botón - Redirige a ../index.html#comidas
+    homeButton.addEventListener('click', function() {
+        window.location.href = '../index.html#comidas';
+    });
 }
 
 // Inicializar el botón cuando se cargue la página
