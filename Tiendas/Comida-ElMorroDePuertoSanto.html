@@ -76,6 +76,53 @@
             margin: 0 auto;
         }
 
+        /* Botón de página principal */
+.home-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.home-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, var(--accent-color), var(--dark-color));
+}
+
+.home-button i {
+    font-size: 1.3rem;
+}
+
+/* Para móviles */
+@media (max-width: 768px) {
+    .home-button {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 15px;
+    }
+    
+    .home-button span {
+        display: none; /* Ocultar texto en móviles para ahorrar espacio */
+    }
+    
+    .home-button i {
+        font-size: 1.5rem;
+    }
+}
+
         /* Galería principal */
         .main-gallery {
             padding: 3rem 0;
@@ -471,6 +518,12 @@
             </div>
             <p class="subtitle">Descubre los mejores restaurantes de la ciudad con una amplia variedad de platillos y experiencias culinarias únicas</p>
         </div>
+
+        <button id="homeButton" class="home-button">
+    <i class="fas fa-home"></i>
+    <span>Página Principal</span>
+</button>
+        
     </header>
 
     <!-- Galería principal (se muestra al hacer clic en una tarjeta) -->
@@ -885,6 +938,44 @@
 
         // Inicializar la aplicación cuando el DOM esté cargado
         document.addEventListener('DOMContentLoaded', init);
+
+        // Crear y agregar el botón de página principal
+function addHomeButton() {
+    // Verificar si el botón ya existe
+    if (document.getElementById('homeButton')) return;
+    
+    // Crear el botón
+    const homeButton = document.createElement('button');
+    homeButton.id = 'homeButton';
+    homeButton.className = 'home-button';
+    homeButton.innerHTML = `
+        <i class="fas fa-home"></i>
+        <span>Página Principal</span>
+    `;
+    
+    // Agregar al cuerpo del documento
+    document.body.appendChild(homeButton);
+    
+    // Agregar funcionalidad al botón
+    homeButton.addEventListener('click', goToHomePage);
+}
+
+// Función para redirigir a la página principal
+function goToHomePage() {
+    // Cambia esta URL por la dirección de tu página principal
+    window.location.href = 'index.html'; // o la URL que necesites
+}
+
+// Inicializar el botón cuando se cargue la página
+document.addEventListener('DOMContentLoaded', function() {
+    addHomeButton();
+    
+    // También puedes agregar esta línea al final de tu función init() existente
+    // init() {
+    //   // tu código existente...
+    //   addHomeButton(); // <-- Agregar esta línea
+    // }
+});
     </script>
 </body>
 </html>
