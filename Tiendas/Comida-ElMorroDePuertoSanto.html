@@ -76,7 +76,7 @@
             margin: 0 auto;
         }
 
-        /* Botón de página principal */
+     /* Botón de página principal */
 .home-button {
     position: fixed;
     bottom: 30px;
@@ -939,14 +939,32 @@
         // Inicializar la aplicación cuando el DOM esté cargado
         document.addEventListener('DOMContentLoaded', init);
 
-       // Botón para redirigir a ../index.html#comidas
+  // Crear y agregar el botón de página principal
+function addHomeButton() {
+    // Verificar si el botón ya existe
+    if (document.getElementById('homeButton')) return;
+    
+    // Crear el botón
+    const homeButton = document.createElement('button');
+    homeButton.id = 'homeButton';
+    homeButton.className = 'home-button';
+    homeButton.innerHTML = `
+        <i class="fas fa-home"></i>
+        <span>Página Principal</span>
+    `;
+    
+    // Agregar al cuerpo del documento
+    document.body.appendChild(homeButton);
+    
+    // Agregar funcionalidad al botón - Redirige a ../index.html#comidas
+    homeButton.addEventListener('click', function() {
+        window.location.href = '../index.html#comidas';
+    });
+}
+
+// Inicializar el botón cuando se cargue la página
 document.addEventListener('DOMContentLoaded', function() {
-    const homeButton = document.getElementById('homeButton');
-    if (homeButton) {
-        homeButton.addEventListener('click', function() {
-            window.location.href = '../index.html#comidas';
-        });
-    }
+    addHomeButton();
 });
     
     // También puedes agregar esta línea al final de tu función init() existente
